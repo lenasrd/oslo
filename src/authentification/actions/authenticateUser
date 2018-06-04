@@ -1,0 +1,6 @@
+import { createAction } from 'redux-actions';
+
+export const login = createAction("USER_LOGIN");
+export const logout = createAction("USER_LOGOUT");
+
+export const fetchProfile = createAction("PROFILE_FETCH_REQUEST");

@@ -5,11 +5,12 @@ import { Route, Switch } from 'react-router';
 import Home from './home';
 import About from './about';
 import PageNotFound from './common/components/PageNotFound';
+import RedirectedLogin, {userIsAuthenticated} from "./authentification";
 
 export default (
   <Switch>
-    <Route exact path="/" component={Home}/>
-    <Route path="/about" component={About}/>
-    <Route component={PageNotFound} />
+        <Route path="/" component={Home}/>
+        <Route path="/about" component={About}/>
+        <Route path="/login" component={RedirectedLogin}/>
   </Switch>
 );
